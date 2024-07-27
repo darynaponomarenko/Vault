@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.aathifmahir.com/dotnet/2022/maui/icons"
+             x:Class="Vault.View2"
+             Title="View2">
+    <Grid Background="#000000">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="5.5*"/>
+            <ColumnDefinition Width=".5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Top bar-->
+
+        <Label Grid.Column="0" Grid.Row="0" Background="#414A61" HorizontalTextAlignment="End"   Text="vault" VerticalTextAlignment="Center" TextColor="White" FontAttributes="Bold"/>
+        <Label Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Background="#414A61"/>
+
+
+
+        <!--Left menu bar-->
+        
+        <Grid Grid.Column="0"  Grid.Row="1" Grid.RowSpan="2">
+            <VerticalStackLayout>
+                <Button HeightRequest="80" Margin="0, 160, 0, 0" Background="Black"/>
+                <Label Text="Home" TextColor="White" HorizontalTextAlignment="Center"/>
+                
+                <Button HeightRequest="80" Background="Black"/>
+                <Label Text="Cards" TextColor="White" HorizontalTextAlignment="Center" Opacity=".7"/>
+                
+                <Button HeightRequest="80" Background="Black"/>
+                <Label Text="Transactions" TextColor="White" HorizontalTextAlignment="Center" Opacity=".7"/>
+                
+                <Button HeightRequest="80" Background="Black"/>
+                <Label Text="Profile" TextColor="White" HorizontalTextAlignment="Center" Opacity=".7"/>
+            </VerticalStackLayout>
+        </Grid>
+        
+        
+        <!--Co middle part-->
+
+        <Grid Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".6*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--First middle part-->
+
+            <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".8*"/>
+                    <RowDefinition Height=".5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Text="Good Morning!" TextColor="White" VerticalTextAlignment="End" Margin="150, 0, 0, 0" FontSize="18"/>
+                <Label Grid.Row="0" Text="$ 8,640.00" TextColor="White" VerticalTextAlignment="End" HorizontalTextAlignment="End" Margin="0, 0, 300, 0" FontSize="26"/>
+
+                <Image Grid.Row="0" HorizontalOptions="End" VerticalOptions="Start" HeightRequest="60" WidthRequest="60"/>
+
+
+                <Label Grid.Row="1" Text="John Smith" TextColor="White" Margin="152, 0, 0, 0" FontSize="22" VerticalTextAlignment="Center"/>
+                <Label Grid.Row="1" Text="Available Balance" TextColor="White" Margin="0, 10, 300, 0" FontSize="14" VerticalTextAlignment="Start" HorizontalTextAlignment="End"/>
+
+                <Border Grid.Row="2" StrokeShape="RoundRectangle 20,20,20,20" Background="#292929" Margin="100, 10, 130, 20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="90"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="1" Background="#292929" HeightRequest="70"/>
+                        <Label Grid.Column="1" Text="Transfer" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                        <Button Grid.Column="2" Background="#292929"/>
+                        <Label Grid.Column="2" Text="Bills" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                        <Button Grid.Column="3" Background="#292929"/>
+                        <Label Grid.Column="3" Text="Recharge" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                        <Button Grid.Column="4" Background="#292929"/>
+                        <Label Grid.Column="4" Text="Products" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                        <Button Grid.Column="5" Background="#292929"/>
+                        <Label Grid.Column="5" Text="Loans" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                        <Button Grid.Column="6" Background="#292929"/>
+                        <Label Grid.Column="6" Text="Security" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                        <Button Grid.Column="7" Background="#292929"/>
+                        <Label Grid.Column="7" Text="Services" VerticalTextAlignment="End" HorizontalTextAlignment="Center" TextColor="White" Margin="0, 0, 0, 4"/>
+
+                    </Grid>
+                </Border>
+
+            </Grid>
+
+            <!--Second middle part-->
+
+            <Grid>
+                
+            </Grid>
+            
+            <!--Left side-->
+            <!--Right side-->
+
+
+        </Grid>
+
+       
+
+    </Grid>
+</ContentPage>
